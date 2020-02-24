@@ -1,11 +1,14 @@
 const express = require('express');
-
 //execute express
 const app = express();
 //Monggose package for MongoDB
 const mongoose = require('mongoose');
 //to use dotenv for DB credential hiding
 require('dotenv/config');
+//import cors to allow Cross-Origin Resource Sharing to make API accepts requests coming from other origins/domains.
+const cors = require('cors');
+//Middleware for cors
+app.use(cors());
 //import body-Parser
 const bodyParser = require('body-parser');
 
