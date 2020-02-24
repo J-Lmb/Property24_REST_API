@@ -45,6 +45,6 @@ app.use('/api/user', authRoute);
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
 
 //listen to server
-app.listen(3000)
+var PORT = process.env.PORT || 3000;
 
 console.log("Listening on port 3000");
