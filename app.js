@@ -23,6 +23,7 @@ const propertyRoute = require('./routes/property');
 
 //Middlewares for body-parser
 app.use(bodyParser.json());//bodyPrser runs everytime we hit any request
+app.use(express.json());
 
 //Middlewares for routes
 //function that execute when routes are being hits
@@ -38,11 +39,12 @@ app.get('/', (req, res) => { //shouts us back a msg
 
 //route Middlewares
 app.use('/api/user', authRoute);
+
 //Connect to DB
 //used dotenv to protect credentials
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
 
 //listen to server
-app.listen(4000)
+app.listen(3000)
 
-console.log("Listening on port 4000");
+console.log("Listening on port 3000");
