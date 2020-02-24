@@ -34,7 +34,7 @@ app.use('/property', propertyRoute);
 
 //ROUTES
 app.get('/', (req, res) => { //shouts us back a msg
-    res.send('home');
+    res.send('This is your first GET request on your home');
 });
 
 //route Middlewares
