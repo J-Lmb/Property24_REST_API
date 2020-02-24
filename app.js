@@ -4,6 +4,8 @@ const app = express();
 //Monggose package for MongoDB
 const mongoose = require('mongoose');
 //to use dotenv for DB credential hiding
+//Import routes
+const authRoute = require('./routes/auth');
 require('dotenv/config');
 //import cors to allow Cross-Origin Resource Sharing to make API accepts requests coming from other origins/domains.
 const cors = require('cors');
@@ -12,6 +14,8 @@ app.use(cors());
 //import body-Parser
 const bodyParser = require('body-parser');
 
+//to upload images
+const multer = require('multer');
 //Import Routes
 const postRoute = require('./routes/posts');
 const userRoute = require('./routes/users');
@@ -27,17 +31,18 @@ app.use('/users', userRoute);
 app.use('/property', propertyRoute);
 
 
-
-
 //ROUTES
 app.get('/', (req, res) => { //shouts us back a msg
-    res.send('We are home.');
+    res.send('home');
 });
 
-
+//route Middlewares
+app.use('/api/user', authRoute);
 //Connect to DB
 //used dotenv to protect credentials
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
 
 //listen to server
-app.listen(4000);
+app.listen(4000)
+
+console.log("Listening on port 4000");
