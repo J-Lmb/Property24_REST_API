@@ -64,5 +64,14 @@ To start the application follow these steps:
 - npm start
 
 ## API call methods - Test Evidence
-### POST Request — For Creating Or Updating data
+### POST Request — For Creating data
 ![image](https://drive.google.com/uc?id=1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d)
+
+### PATCH Request — For Updating data
+![image](https://drive.google.com/uc?id=1lEz-XhVoQ-QGgs-AKOuEyajyiKyE4k0X)
+
+### GET Request — For Retrieving/Fetching data
+![image](https://drive.google.com/uc?id=1i7ovod9-qvIrA10zb7HFcFzXfK5JIzez)
+
+### DELETE Request — For Deleting data
+![image](https://drive.google.com/uc?id=1QtGJyE2tipWmFLrw5yNDg-h2EiVnUJUI)
