@@ -42,7 +42,12 @@ app.get('/', (req, res) => { //shouts us back a msg
     res.send('home');
 });
 
+app.get('/app/:id', checkUserAuth, findApp, renderView, sendJSON);
 
+function checkUserAuth(req, res, next) {
+  if (req.session.user) return next();
+  return next(new NotAuthorizedError());
+}
 //Connect to DB
 //used dotenv to protect credentials
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
