@@ -62,3 +62,7 @@ To start the application follow these steps:
 - Ensure that you have all pre-requisites
 - cd in project folder
 - npm start
+
+## API call methods - Test Evidence
+### POST Request — For Creating Or Updating data
+![image](https://drive.google.com/file/d/1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d/view?usp=sharing)
