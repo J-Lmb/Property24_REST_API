@@ -65,7 +65,7 @@ To start the application follow these steps:
 
 ## API call methods - Test Evidence
 ### POST Request — For Creating data
-![alt text](https://drive.google.com/uc?id=1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d)
+![url](https://drive.google.com/uc?id=1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d)
 
 ### PATCH Request — For Updating data
 ![alt text](https://drive.google.com/uc?id=1lEz-XhVoQ-QGgs-AKOuEyajyiKyE4k0X)
