@@ -65,13 +65,13 @@ To start the application follow these steps:
 
 ## API call methods - Test Evidence
 ### POST Request — For Creating data
-![image](https://drive.google.com/uc?id=1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d)
+![alt text](https://drive.google.com/uc?id=1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d)
 
 ### PATCH Request — For Updating data
-![image](https://drive.google.com/uc?id=1lEz-XhVoQ-QGgs-AKOuEyajyiKyE4k0X)
+![alt text](https://drive.google.com/uc?id=1lEz-XhVoQ-QGgs-AKOuEyajyiKyE4k0X)
 
 ### GET Request — For Retrieving/Fetching data
-![image](https://drive.google.com/uc?id=1i7ovod9-qvIrA10zb7HFcFzXfK5JIzez)
+![alt text](https://drive.google.com/uc?id=1i7ovod9-qvIrA10zb7HFcFzXfK5JIzez)
 
 ### DELETE Request — For Deleting data
-![image](https://drive.google.com/uc?id=1QtGJyE2tipWmFLrw5yNDg-h2EiVnUJUI)
+![alt text](https://drive.google.com/uc?id=1QtGJyE2tipWmFLrw5yNDg-h2EiVnUJUI)
