@@ -49,6 +49,9 @@ app.get('/', (req, res) => { //shouts us back a msg
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
 
 //listen to server
-app.listen(3000)
-
-console.log("Listening on port 3000");
+//app.listen(3000)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+//console.log("Listening on port 3000");
