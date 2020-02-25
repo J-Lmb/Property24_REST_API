@@ -6,11 +6,16 @@ const mongoose = require('mongoose');
 //to use dotenv for DB credential hiding
 //Import routes
 const authRoute = require('./routes/auth');
+
+
 require('dotenv/config');
 //import cors to allow Cross-Origin Resource Sharing to make API accepts requests coming from other origins/domains.
 const cors = require('cors');
 //Middleware for cors
 app.use(cors());
+
+//route Middlewares
+app.use('/api/user', authRoute);
 //import body-Parser
 const bodyParser = require('body-parser');
 
@@ -37,14 +42,13 @@ app.get('/', (req, res) => { //shouts us back a msg
     res.send('home');
 });
 
-//route Middlewares
-app.use('/api/user', authRoute);
+
 
 //Connect to DB
 //used dotenv to protect credentials
 mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
 
 //listen to server
-var PORT = process.env.PORT || 3000;
+app.listen(3000)
 
 console.log("Listening on port 3000");

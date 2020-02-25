@@ -50,7 +50,7 @@ router.get('/:postId', async (req, res) => {
 router.delete('/:postId', async (req, res) => {
     try{
         const removedPost = await Post.remove({_id: req.params.postId});
-        res.json(removedPost);
+        res.json(removedPost);//Send a JSON response.
     }catch(err){
         res.status(404).json({message:err});
     }

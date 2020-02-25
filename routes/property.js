@@ -25,9 +25,6 @@ router.get('/:id', async (req, res) => {
 });
 module.exports = router;
 
-/*router.get('/specific', (req, res) => {
-    res.send('Specific post.');
-});*/
 
 //SUBMIT A PROP
 router.post('/', function(req, res, next){
