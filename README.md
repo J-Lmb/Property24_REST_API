@@ -59,6 +59,6 @@ The backend supports the following http methods:
 ### Running the App
 To start the application follow these steps:
 - Clone the repository
-- Ensure that you have all pre-requisite
+- Ensure that you have all pre-requisites
 - cd in project folder
 - npm start
