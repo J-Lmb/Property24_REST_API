@@ -65,4 +65,4 @@ To start the application follow these steps:
 
 ## API call methods - Test Evidence
 ### POST Request — For Creating Or Updating data
-![image](https://drive.google.com/file/d/1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d/view?usp=sharing)
+![image](https://drive.google.com/uc?id=1gcEXSdsM3h38UqXv7FWOtAtxTi3jki-d)
