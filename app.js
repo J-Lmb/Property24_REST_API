@@ -44,8 +44,8 @@ app.get('/', (req, res) => { //shouts us back a msg
 
 //Connect to DB
 //used dotenv to protect credentials
-//mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
-mongoose.connect('mongodb+srv://dbZaio:Zaio2020Launchlab@cluster0-q9lzt.mongodb.net/test?retryWrites=true&w=majority', () => console.log('connected to DB!'))
+mongoose.connect(process.env.DB_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true}, () => console.log('connected to DB!'))
+
 //listen to server
 //app.listen(3000)
 const PORT = process.env.PORT || 3000;
