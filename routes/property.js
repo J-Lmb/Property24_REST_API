@@ -37,8 +37,8 @@ router.post('/', function(req, res, next){
 router.get('/:propId', async (req, res) => {
     console.log(req.params.propId);//This would be like a dynamic parameter. everything you add after prop, is gonna be that prop id. localhost:4000/posts/thisid, 'thisis'is the ID.
     try{
-        //const prop = await Prop.findById(req.params.propId);//add 'await'as this might take some time as it's coming from DB.
-        const prop = await Prop.findById();
+        const prop = await Prop.findById(req.params.propId);//add 'await'as this might take some time as it's coming from DB.
+        //const prop = await Prop.findById();
         res.json(prop);
     }catch(err){
         res.status(404).json({message:err});
