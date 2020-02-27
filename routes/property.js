@@ -3,6 +3,7 @@ const router = express.Router();
 //import the model we wanna post to
 const Prop = require('../models/Prop');//whenever we wanna get data, submit data etc...we will use this model.
 const mongoose = require('mongoose');
+
 //GETS BACK ALL THE PROPS
 router.get('/', async (req, res) => {
     try{
@@ -13,7 +14,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:id', async (req, res) => {
+/*router.get('/:id', async (req, res) => {
     var id = mongoose.Types.ObjectId(req.params.id);
     let Image = await Model.findOne({ _id: id });
     if (!Image) { return res.status(404).send({ message: 'not found Images' }) }
@@ -22,8 +23,8 @@ router.get('/:id', async (req, res) => {
         data: Image
     });
 
-});
-module.exports = router;
+});*/
+//module.exports = router;
 
 
 //SUBMIT A PROP
